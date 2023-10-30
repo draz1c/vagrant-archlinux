@@ -22,7 +22,7 @@ build {
   sources = ["source.vagrant.base-image"]
 
   provisioner "shell" {
-    execute_command = "echo 'vagrant' | {{ .Vars }} sudo -S -E bash '{{ .Path }}'"
+    # execute_command = "echo 'vagrant' | {{ .Vars }} sudo -S -E bash '{{ .Path }}'"
     script          = "scripts/ansible.sh"
   }
 }
